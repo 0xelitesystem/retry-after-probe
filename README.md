@@ -90,6 +90,6 @@ MIT.
 
 ## Related
 
-- [webhook-inspector](https://github.com/0xelitesystem/webhook-inspector), inspect webhook payloads
+- [service-worker-webhook-inspector](https://github.com/0xelitesystem/service-worker-webhook-inspector), inspect webhook payloads
 - [multi-provider-webhook-verifier](https://github.com/0xelitesystem/multi-provider-webhook-verifier), verify webhook signatures
 - [oauth-url-linter](https://github.com/0xelitesystem/oauth-url-linter), decode OAuth URLs
