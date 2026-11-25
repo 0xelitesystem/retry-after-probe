@@ -1,8 +1,8 @@
-# Rate Limit Tester
+# Retry-After Probe
 
 Probe a URL with N requests per second from your browser. See when it 429s, what `Retry-After` it returns, and how rate-limit headers behave.
 
-**Live demo:** https://0xelitesystem.github.io/rate-limit-tester/
+**Live demo:** https://0xelitesystem.github.io/retry-after-probe/
 
 ## Use
 
@@ -50,8 +50,8 @@ All requests originate from your browser to the configured URL. No requests go t
 ## Run locally
 
 ```bash
-git clone https://github.com/0xelitesystem/rate-limit-tester
-cd rate-limit-tester
+git clone https://github.com/0xelitesystem/retry-after-probe
+cd retry-after-probe
 # Open index.html, or:
 python -m http.server 8000
 ```
