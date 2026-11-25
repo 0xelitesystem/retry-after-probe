@@ -91,5 +91,5 @@ MIT.
 ## Related
 
 - [webhook-inspector](https://github.com/0xelitesystem/webhook-inspector), inspect webhook payloads
-- [webhook-signature-verifier](https://github.com/0xelitesystem/webhook-signature-verifier), verify webhook signatures
+- [multi-provider-webhook-verifier](https://github.com/0xelitesystem/multi-provider-webhook-verifier), verify webhook signatures
 - [oauth-flow-debugger](https://github.com/0xelitesystem/oauth-flow-debugger), decode OAuth URLs
