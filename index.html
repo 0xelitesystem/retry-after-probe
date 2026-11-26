@@ -549,6 +549,11 @@ function statusClass(status) {
   return "status-err";
 }
 
+// Header values come from the server being probed: escape them before they reach innerHTML.
+function esc(s) {
+  return String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
+}
+
 function renderTable() {
   const body = $("results-body");
   if (state.results.length === 0) return;
@@ -560,8 +565,8 @@ function renderTable() {
       <td>${r.t}</td>
       <td class="${statusClass(r.status)}">${r.status === 0 ? "ERR" : r.status}</td>
       <td>${r.latency != null ? r.latency : "--"}</td>
-      <td>${r.retryAfter || ""}</td>
-      <td style="font-size: 0.75rem; color: var(--ink-soft);">${r.rateLimit || ""}</td>
+      <td>${esc(r.retryAfter || "")}</td>
+      <td style="font-size: 0.75rem; color: var(--ink-soft);">${esc(r.rateLimit || "")}</td>
     </tr>`;
   });
   body.innerHTML = html;
